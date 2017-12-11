@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">KukdooKoo</string>
+    <string-array name="ringtones">
+        <item name="numb"/>
+        <item name="ring"/>
+        <item name="believer"/>
+    </string-array>
+    <string-array name="methods">
+        <item name="Default"/>
+        <item name="Shake"/>
+    </string-array>
+</resources>

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#455A64">
+
+    <include
+        layout="@layout/toolbar_settings"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relLay"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="80dp">
+
+        <ImageButton
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_action_forward"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:id="@+id/setSnooze"
+            android:background="#455A64"/>
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/setSnooze"
+            android:id="@+id/snoozetime"
+            android:text="5 min"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="17dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="20dp"/>
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="54dp"
+        android:id="@+id/btSnooze"
+        android:text="Snooze"
+        android:textSize="18dp"
+        android:gravity="center_vertical"
+        android:textColor="#FFFFFF"
+        android:background="#455A64"/>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/relLay"
+        android:id="@+id/fakeTv"
+        android:gravity="center_vertical"
+        android:textSize="18dp"
+        android:text="Math Difficulty"
+        android:textColor="#FFFFFF"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekMdiff"
+        android:layout_toRightOf="@id/fakeTv"
+        android:layout_below="@id/relLay"
+        android:layout_marginTop="68dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/fakeTv"
+        android:id="@+id/fakeTv2"
+        android:gravity="center_vertical"
+        android:textSize="18dp"
+        android:text="Shake Force"
+        android:textColor="#FFFFFF"/>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/seekTdiff"
+        android:layout_toRightOf="@id/fakeTv"
+        android:layout_below="@id/seekMdiff"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp" />
+</RelativeLayout>

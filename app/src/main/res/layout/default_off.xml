@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="#212121">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"
+        android:id="@+id/showlabel"/>
+
+
+    <Button
+        android:id="@+id/dismiss"
+        android:background="@drawable/oval"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@id/showlabel"
+        android:layout_marginLeft="85dp"
+        android:layout_marginTop="30dp"
+        android:text="DISMISS"
+        android:textSize="35dp"
+        android:textStyle="italic"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:layout_width="125dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/dismiss"
+        android:layout_marginTop="8dp"
+        android:layout_centerInParent="true"
+        android:textAlignment="center"
+        android:id="@+id/timer"
+        android:textSize="25dp"
+        android:textColor="#FFFFFF"/>
+
+    <TextView
+        android:layout_width="130dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="60dp"
+        android:text="Swipe up to SNOOZE"
+        android:textSize="25dp"
+        android:textColor="#EEEEEE"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
